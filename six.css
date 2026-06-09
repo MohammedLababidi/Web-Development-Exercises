@@ -1,0 +1,58 @@
+.card {
+    width: 300px;
+    height: 450px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px;
+}
+body {
+    background: linear-gradient(to right , lightblue , rgb(111, 111, 230));
+}
+.card img {
+    width: 100%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+.card p {
+    background: linear-gradient(to bottom , rgb(185, 61, 185) , rgb(214, 132, 143));
+    width: 100px;
+    height: 25px;
+    border-radius: 15px;
+    text-align: center;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.card h3 {
+    margin-top: -10px;
+    margin-left: 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.des p {
+    margin-top: -175px;
+    margin-left: 14px;
+    width: 20%;
+    text-align: justify;
+}
+.author img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-left: 15px;
+}
+.author {
+    align-items: center;
+    display: flex;
+    margin-top: 28px;
+    
+}
+.author h4 {
+    margin-left: 5px;
+    margin-top: 5px;
+}
+.author p {
+    margin-bottom: -10px;
+    margin-left: -63px;
+    font-size: 11px;
+    color: gray;
+}
