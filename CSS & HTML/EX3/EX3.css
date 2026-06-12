@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header h1 {
+    text-align: center;
+    margin-top: 20px;
+}
+body {
+    background-color: #ffc63d;
+}
+.header p{
+font-size: 11px;
+font-style: oblique;
+text-align: center;
+margin-top: 20px;
+}
+.container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+.container .card1 {
+    width: 160px;
+    height: 286px;
+    background-color: white;
+}
+.container .card1 img {
+    width: 100%;
+    height: 140px;
+}
+.container .card1 h5 {
+    text-align: center;
+    margin-top: 10px;
+}
+.container .card1 p {
+    text-align: center;
+    font-size: 10px;
+    width: 90%;
+    margin: auto;
+    margin-top: 20px;
+}
+.container .card1 .arrow1 {
+    display: flex;
+    justify-self: center;
+    width: 20px;
+    height: 20px;
+    margin-top: 20px;
+}
+.container .card2 {
+    width: 160px;
+    height: 286px;
+    background-color: white;
+}
+.container .card2 img {
+    width: 100%;
+    height: 140px;
+}
+.container .card2 h5 {
+    text-align: center;
+    margin-top: 10px;
+}
+.container .card2 p {
+    text-align: center;
+    font-size: 10px;
+    width: 90%;
+    margin: auto;
+    margin-top: 20px;
+}
+.container .card2 .arrow2 {
+    display: flex;
+    justify-self: center;
+    width: 20px;
+    height: 20px;
+    margin-top: 20px;
+}
+.container .card3 {
+    width: 160px;
+    height: 286px;
+    background-color: white;
+}
+.container .card3 img {
+    width: 100%;
+    height: 140px;
+}
+.container .card3 h5 {
+    text-align: center;
+    margin-top: 10px;
+}
+.container .card3 p {
+    text-align: center;
+    font-size: 10px;
+    width: 90%;
+    margin: auto;
+    margin-top: 20px;
+}
+.container .card3 .arrow3 {
+    display: flex;
+    justify-self: center;
+    width: 20px;
+    height: 20px;
+    margin-top: 20px;
+}
+.container .card4 {
+    width: 160px;
+    height: 286px;
+    background-color: white;
+}
+.container .card4 img {
+    width: 100%;
+    height: 140px;
+}
+.container .card4 h5 {
+    text-align: center;
+    margin-top: 10px;
+}
+.container .card4 p {
+    text-align: center;
+    font-size: 10px;
+    width: 90%;
+    margin: auto;
+    margin-top: 20px;
+}
+.container .card4 .arrow4 {
+    display: flex;
+    justify-self: center;
+    width: 20px;
+    height: 20px;
+    margin-top: 20px;
+}
