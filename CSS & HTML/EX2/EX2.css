@@ -1,0 +1,38 @@
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+}
+.container .card1 {
+    width: 310px;
+    height: 270px;
+    background-color: #f2f2f2;
+    border-radius: 50px;
+}
+.container .card2 img {
+    width: 310px;
+    height: 270px;
+    border-radius: 50px;
+}
+.container .card1 h1 {
+    margin-left: 20px;
+    margin-top: 35px;
+}
+#unique{
+    margin-left: 20px;
+margin-top: -10px;
+font-size: 14px;
+}
+.container .card1 p {
+    margin-left: 20px;
+    width: 80%;
+    font-size: 11px;
+    text-align: justify;
+}
+.container .card1 a {
+    text-decoration: none;
+    font-style: oblique;
+    color: #f19d0e;
+}
