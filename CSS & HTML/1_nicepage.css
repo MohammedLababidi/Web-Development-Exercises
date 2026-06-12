@@ -1,0 +1,167 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.section img {
+    width: 770px;
+    position: relative;
+    right: 0;
+    margin-top: -50px;
+}
+.section svg {
+    position: absolute;
+    margin-top: -450px;
+    margin-left: 308px;
+    cursor: pointer;
+}
+.section h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    font-size: 3rem;
+    font-weight: 750;
+    margin-top: -385px;
+    margin-left: 40px;
+    line-height: 45px;
+}
+.section p {
+    position: absolute;
+    width: 38%;
+    margin-top: -280px;
+    margin-left: 40px;
+    text-align: justify;
+}
+.section h6 {
+    position: absolute;
+    margin-top: -185px;
+    margin-left: 40px;
+}
+.section a {
+    position: absolute;
+    margin-left: 5px;
+}
+.section button {
+    position: absolute;
+    margin-top: -150px;
+    margin-left: 40px;
+    border: none;
+    padding: 8px;
+    width: 110px;
+    cursor: pointer;
+    transition: 0.3s;
+    background-color: blue;
+    color: white;
+    font-size: 11px;
+}
+.section button:hover {
+    background-color: rgb(210, 167, 250);
+    color: black;
+}
+.container1 {
+display: flex;
+justify-content: space-around;
+}
+.container1 .card1 {
+    width: 220px;
+    height: 150px;
+    background-color: #f2f2f2;
+    margin-top: 120px;
+    line-height: 20px;
+}
+.container1 .card2 {
+    width: 250px;
+    height: 250px;
+    background-color: #f2f2f2;
+    margin-top: 50px;
+    
+}
+.mid h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    margin-top: 50px;
+    margin-left: 74px;
+    position: absolute;
+}
+.mid p {
+    position: absolute;
+    font-size: 11px;
+    margin-top: 90px;
+    margin-left: 74px;
+}
+.container1 .card2 label {
+    display: block;
+    margin-top: 20px;
+    margin-left: 15px;
+    font-size: 11px;
+}
+.container1 .card2 input , textarea {
+    width: 210px;
+    height: 25px;
+    margin-left: 15px;
+    font-size: 9px;
+    border: none;
+    padding-left: 7px;
+}
+.card2 button {
+    position: absolute;
+    margin-top: 50px;
+    margin-left: -210px;
+    border: none;
+    padding: 5px;
+    width: 70px;
+    cursor: pointer;
+    transition: 0.1s;
+    background-color: blue;
+    color: white;
+    font-size: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.card2 button:hover {
+    background-color: rgb(45, 45, 248);
+    color: #ecdede;
+}
+.container2 {
+    display: flex;
+    position: relative;
+    width: 200vh;
+    height: 200px;
+    margin-top: 60px;
+    background-color: #f2f2f2;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+.footer {
+    width: 200vh;
+    height:250px;
+    background-color: rgba(28, 28, 179, 0.753);
+}
+.footer h2 {
+    width: 40%;
+    position: relative;
+    top: 55px;
+    left: 80px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.footer p {
+    font-size: 10px;
+    position: relative;
+    top: 100px;
+    left: 80px;
+}
+.footer h5 {
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    top: 100px;
+    left: 80px;
+}
+.footer1 .svgs {
+    display: flex;
+    gap: 10px;
+    margin-left: 600px;
+    margin-top: 15px;
+    color: white;
+    cursor: pointer;
+}
+
