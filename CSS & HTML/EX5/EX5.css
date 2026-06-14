@@ -1,0 +1,744 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000000;
+    font-family: sans-serif;
+}
+
+#btn {
+    color: white;
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+
+#btn svg {
+    width: 35px;
+    height: 35px;
+    display: block;
+}
+
+hr {
+    position: relative;
+    width: 100%;
+    z-index: 10;
+    margin-top: 10px;
+}
+
+.sidebar {
+    width: 200px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: -200px;
+    background: rgba(0, 0, 0, 0.918);
+    transition: 0.4s;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 60px;
+    padding-left: 20px;
+    z-index: 1000;
+}
+
+.sidebar.active {
+    left: 0;
+}
+
+.sidebar a {
+    display: inline-block;
+    cursor: pointer;
+    font-size: 14px;
+    text-decoration: none;
+    color: white;
+}
+
+.sidebar ul {
+    padding: 10px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: white;
+}
+
+.exit {
+    color: white;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 15px;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.overlay {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s;
+    z-index: 999;
+}
+
+.overlay.active {
+    visibility: visible;
+    opacity: 1;
+}
+
+.header {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 100px;
+    margin-top: 10px;
+}
+
+.header input {
+    height: 35px;
+    padding: 7px;
+    font-size: 18px;
+    border: 1px solid white;
+    background: none;
+}
+
+#search {
+    position: absolute;
+    color: #999999;
+    margin-left: 190px;
+    margin-top: 6px;
+    width: 20x;
+    height: 20px;
+    cursor: pointer;
+}
+
+.section {
+    position: relative;
+    height: 100vh;
+}
+
+.section img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin-top: -10px;
+    inset: 0;
+    object-fit: cover;
+    opacity: 0.7;
+}
+
+.text {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 10;
+    color: white;
+    max-width: 900px;
+    width: 70%;
+}
+
+.text h1 {
+    font-size: 3.5rem;
+}
+
+.text p {
+    font-size: 1rem;
+}
+
+.text svg {
+    z-index: 20;
+    color: white;
+    width: 50px;
+    height: 50px;
+    color: orange;
+    margin-top: 25px;
+}
+
+.container h3 {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    color: white;
+    font-size: 2.25rem;
+}
+
+.container p {
+    display: flex;
+    justify-content: center;
+    color: #999999;
+    margin-top: 10px;
+    font-size: 1rem;
+    line-height: 1.6;
+    text-align: center;
+}
+
+.card-text {
+    max-width: 200px;
+    padding: 0;
+    text-align: center;
+    margin-top: 80px;
+    color: white;
+}
+
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+    padding: 30px;
+}
+
+.cards h4 {
+    font-size: 1.5rem;
+    width: 300px;
+    margin-left: -45px;
+    margin-top: 20px;
+    
+}
+
+.card1 {
+    position: relative;
+    width: 300px;
+    height: 210px;
+    display: flex;
+    justify-content: center;
+}
+
+.card1 svg {
+    position: absolute;
+    color: white;
+    background-color: #f17c0e;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    padding: 5px;
+    margin-top: 30px;
+}
+
+.card1 a {
+   position: absolute;
+    text-align: center;
+    height: 22%;
+    align-self: self-end;
+    background: none;
+    border: 2px solid #f17c0e;
+    width: 150px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 500;
+    color: #f17c0e;
+    font-size: 1.1rem;
+    padding: 9px;
+    margin-bottom: -45px;
+}
+
+.card1 a:hover {
+    background-color: #f17c0e;
+    color: white;
+}
+
+.card2 {
+    position: relative;
+    width: 300px;
+    height: 210px;
+    display: flex;
+    justify-content: center;
+}
+
+.card2 svg {
+    position: absolute;
+    color: white;
+    background-color: #f17c0e;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    padding: 5px;
+    margin-top: 30px;
+}
+
+.card2 a {
+    position: absolute;
+    text-align: center;
+    height: 22%;
+    align-self: self-end;
+    background: none;
+    border: 2px solid #f17c0e;
+    width: 150px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 500;
+    color: #f17c0e;
+    font-size: 1.1rem;
+    padding: 9px;
+    margin-bottom: -45px;
+    margin-left: 8px;
+}
+
+.card2 a:hover {
+    background-color: #f17c0e;
+    color: white;
+}
+
+.card3 {
+    position: relative;
+    width: 300px;
+    height: 210px;
+    display: flex;
+    justify-content: center;
+}
+
+.card3 svg {
+    position: absolute;
+    color: white;
+    background-color: #f17c0e;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    padding: 5px;
+    margin-top: 30px;
+}
+
+.card3 a {
+    position: absolute;
+    text-align: center;
+    height: 22%;
+    align-self: self-end;
+    background: none;
+    border: 2px solid #f17c0e;
+    width: 150px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 500;
+    color: #f17c0e;
+    font-size: 1.1rem;
+    padding: 9px;
+    margin-bottom: -45px;
+    margin-left: 18px;
+}
+
+.card3 a:hover {
+    background-color: #f17c0e;
+    color: white;
+}
+
+.container2 {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 200px;
+}
+
+.container2 .card1 {
+    display: block;
+    width: 550px;
+    height: 510px;
+}
+
+.container2 .card1 h2 {
+    color: white;
+    text-align: right;
+    text-align: justify;
+    margin-top: 30px;
+    font-size: 2.25rem;
+}
+
+.container2 .card1 p {
+    color: white;
+    font-size: 18px;
+    text-align: justify;
+    line-height: 1.6;
+}
+
+.container2 .card2 {
+    width: 570px;
+    height: 510px;
+    background-color: #f17c0e;
+    display: block;
+    padding-left: 30px;
+} 
+
+.container2 .card2 h5 {
+    color: white;
+    margin-top: 120px;
+    font-size: 1.25rem;
+}
+
+.container2 .card2 li {
+    max-width: 450px;
+    color: white;
+    font-size: 1rem;
+    margin-left: 15px;
+    text-align: justify;
+    font-weight: 600;
+}
+
+.container3 {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 25px;
+}
+
+.container3 img {
+    width: 350px;
+    height: 250px;
+}
+
+.container3-text h1 {
+    color: white;
+    font-size: 3.5rem;
+    width: 50%;
+    margin-top: 120px;
+    margin-left: 150px;
+}
+
+.container3-text h3 {
+    color: white; 
+    text-align: end;
+    font-size: 2rem;
+    padding-right: 120px;
+    margin-top: 70px;
+}
+
+.container4 {
+    display: flex;
+    justify-content: center;
+    margin-top: 200px;
+    gap: 100px;
+}
+
+.container4 .card1 {
+    width: 500px;
+    display: block;
+}
+
+.container4 .card1 h1 {
+    color: white;
+    font-size: 2.25rem;
+    left: 0;
+}
+
+.container4 .card1 p {
+    font-size: 20px;
+    color: white;
+    text-decoration: underline;
+    line-height: 1.6;
+}
+
+.container4 .card1 .unique {
+    text-decoration: none;
+    font-size: 16px;
+    background-color: #f17c0e; 
+    padding: 10px 10px 20px;
+    height: 130px;
+    line-height: 1.6;
+    text-align: justify;
+} 
+
+.container4 .card1 .unique-1 {
+    text-decoration: none;
+    font-size: 14px;
+    height: 130px;
+    line-height: 1.6;
+    text-align: justify;
+} 
+
+.container4 .card2 {
+    width: 400px;
+}
+
+.container4 img {
+    width: 470px;
+    height: 470px;
+    border-radius: 50%;
+   
+}
+
+.container5 {
+    display: flex;
+    margin-top: 150px;
+    flex-direction: column;
+    text-align: center;
+    line-height: 1.6;
+}
+
+.container5 h1 {
+    color: white;
+    font-size: 3.75rem;
+}
+
+.container5 p {
+    color: white;
+    font-size: 1rem;
+}
+
+.list1 {
+    padding-left: 230px;
+    padding-right: 230px;
+    padding-top: 40px; 
+}
+
+.list1 h5 , svg {
+    cursor: pointer;
+}
+
+.list1_h5 {
+    width: 100%;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 25px 0;
+    align-items: center;
+    font-size: 1rem;
+    height: 65px;
+    border-bottom: 1px solid #555c66;
+}
+
+.list1_p {
+    justify-self: center;
+    margin-top: 40px;
+    font-size: 1rem;
+    line-height: 1.6;
+    visibility: hidden;
+    display: none;
+}
+
+.list1_p.active {
+    visibility: visible;
+    display: block;
+}
+
+.list1_h5.active {
+    background-color: #f17c0e;
+}
+
+.list1 svg {
+    width: 30px;
+    height: 30px;
+}
+
+.list2 {
+    padding-left: 230px;
+    padding-right: 230px;
+    padding-top: 40px; 
+}
+
+.list2 h5 , svg {
+    cursor: pointer;
+}
+
+.list2_h5 {
+    width: 100%;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 25px 0;
+    align-items: center;
+    font-size: 1rem;
+    height: 65px;
+    border-bottom: 1px solid #555c66;
+}
+
+.list2_p {
+    justify-self: center;
+    margin-top: 40px;
+    font-size: 1rem;
+    line-height: 1.6;
+    visibility: hidden;
+    display: none;
+}
+
+.list2_p.active {
+    visibility: visible;
+    display: block;
+}
+
+.list2_h5.active {
+    background-color: #f17c0e;
+}
+
+.list2 svg {
+    width: 30px;
+    height: 30px;
+}
+
+.list3 {
+    padding-left: 230px;
+    padding-right: 230px;
+    padding-top: 40px; 
+}
+
+.list3 h5 , svg {
+    cursor: pointer;
+}
+
+.list3_h5 {
+    width: 100%;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 25px 0;
+    align-items: center;
+    font-size: 1rem;
+    height: 65px;
+    border-bottom: 1px solid #555c66;
+}
+
+.list3_p {
+    justify-self: center;
+    margin-top: 40px;
+    font-size: 1rem;
+    line-height: 1.6;
+    visibility: hidden;
+    display: none;
+}
+
+.list3_p.active {
+    visibility: visible;
+    display: block;
+}
+
+.list3_h5.active {
+    background-color: #f17c0e;
+}
+
+.list3 svg {
+    width: 30px;
+    height: 30px;
+}
+
+.list4 {
+    padding-left: 230px;
+    padding-right: 230px;
+    padding-top: 40px; 
+}
+
+.list4 h5 , svg {
+    cursor: pointer;
+}
+
+.list4_h5 {
+    width: 100%;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 25px 0;
+    align-items: center;
+    font-size: 1rem;
+    height: 65px;
+    border-bottom: 1px solid #555c66;
+}
+
+.list4_p {
+    justify-self: center;
+    margin-top: 40px;
+    font-size: 1rem;
+    line-height: 1.6;
+    visibility: hidden;
+    display: none;
+}
+
+.list4_p.active {
+    visibility: visible;
+    display: block;
+}
+
+.list4_h5.active {
+    background-color: #f17c0e;
+}
+
+.list4 svg {
+    width: 30px;
+    height: 30px;
+}
+
+.container6 {
+    display: flex;
+    margin-top: 200px;
+    justify-content: center;
+    gap: 120px;
+}
+
+.container6 img {
+    width: 750px;
+    height: 400px;
+}
+
+.container6 h1 {
+    color: white;
+    width: 20%;
+    margin-top: 170px;
+    font-size: 2.25;
+}
+
+.container7 {
+    display: flex;
+    margin-top: 170px;
+    justify-content: center;
+    gap: 100px;
+    padding: 0 120px 0;
+}
+.container7 .c_text {
+    display: block;
+    width: 600px;
+    height: 500px;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.container7 .c_text p {
+    color: white;
+    font-size: 1.125rem;
+}
+
+.container7 .c_text h1 {
+    color: white;
+}
+
+.container7 input {
+    height: 50px;
+    background: none;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    border-bottom: 2px solid white;
+    width: 100%;
+    padding-left: 15px;
+    font-size: 1rem;
+    margin: 7px;
+}
+
+.container7 a {
+    position: absolute;
+    border: 2px solid #f17c0e;
+    color: #f17c0e;
+    text-decoration: none;
+    height: 45px;
+    width: 130px;
+    font-size: 1.125rem;
+    align-content: center;
+    border-radius: 50px;
+}
+
+.container7 a:hover {
+    background-color: #f17c0e;
+    color: white;
+}
+
+.container7 .links {
+    display: flex;
+    position: absolute;
+    color: #f17c0e;
+    margin-top: 300px;
+    margin-left: 200px;
+    gap: 20px;
+    cursor: pointer;
+    padding: 0;
+}
