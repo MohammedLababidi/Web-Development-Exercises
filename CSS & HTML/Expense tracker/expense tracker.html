@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="expense tracker.css">
+</head>
+<body>
+    <div class="mainBox">
+        <h1>Expense Tracker</h1>
+        <div class="header">
+            <p>Expense name:</p>
+            <input class="input" type="text" placeholder="Enter you expense name...">
+            <p>Amount:</p>
+            <input class="amountInput" type="text" placeholder="Amount...">
+            <button onclick="addItem()">add</button>
+        </div>
+        <div class="list">
+        <div class="content">
+           <div class="id">
+            <h4 style="color: rgb(133, 133, 255);">id</h4>
+           </div>
+           <div class="expense">
+            <h4 style="color: rgb(133, 133, 255);">Expense</h4>
+           </div>
+           <div class="amount">
+            <h4 style="color: rgb(133, 133, 255);">Amount</h4>
+           </div>
+           <div class="action">
+            <h4 style="color: rgb(133, 133, 255);">Action</h4>
+           </div>
+           
+        </div>
+        <hr>
+            <h3>Total = <span class="total">0</span>$</h3>
+        
+        </div>
+    </div>
+    
+    <script src="expense tracker.js"></script>
+</body>
+</html>
