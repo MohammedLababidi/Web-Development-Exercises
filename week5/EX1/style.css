@@ -1,0 +1,24 @@
+span {
+    color: #fa773c;
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+img {
+    background-color: #fa773c ;
+}
+
+.card {
+    background-color: #f2f2f2;
+    border-top-left-radius: 100px;
+    border-bottom-left-radius: 100px;
+}
+
+.card-body {
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    background-color: white;
+}
