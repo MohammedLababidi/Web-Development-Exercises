@@ -1,0 +1,280 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+img {
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+}
+
+.section-1 {
+    background-image: url(images/section1-background.jpg);
+    height: auto;
+    background-size: cover;
+}
+
+.phone {
+    background-color: #ec7f29;
+    height: 45px;
+    width: 170px;
+    align-content: center;
+    text-align: center;
+    cursor: pointer;
+}
+
+.phone:hover {
+    background-color: rgb(44, 204, 83, 1);
+}
+
+.section-3 .btn:hover {
+    background-color: rgb(22, 171, 59) !important;
+}
+
+.navbar-toggler-icon {
+    filter: invert();
+}
+
+.section-1 .h1 {
+    font-size: clamp(2rem, 6vw, 6rem);
+    font-weight: bolder;
+}
+
+.card-1 h1 {
+    font-size: clamp(1.5rem, 3vw, 4rem);
+    font-weight: bold;
+}
+
+.section-3 h1 {
+    font-size: clamp(1.5rem, 5vw, 3.3rem);
+    font-weight: bold;
+}
+
+.section-4 h1 {
+    font-size: clamp(1.5rem, 4vw, 3rem);
+    font-weight: bold;
+}
+
+.section-5 h1 {
+    font-size: clamp(1.5rem , 5vw ,3.5rem);
+    font-weight: bolder;
+}
+
+.section-6 {
+    background-image: url(images/Untitl67ed-3\ \(1\).jpg);
+}
+
+.section-6 h1{
+    font-size: clamp(1.5rem , 5vw ,3rem);
+    font-weight: bolder;
+}
+
+.section-9 {
+    background-image: url(images/Untitl67ed-3.jpg);
+    object-fit: cover;
+}
+
+.section-9 h1 {
+    font-size: clamp(1.5rem , 5vw ,3.5rem);
+    font-weight: bolder;
+}
+
+.section-7 h1{
+    font-size: clamp(1.8rem , 6vw ,3rem);
+    font-weight: bolder;
+}
+
+.section-10 h1{
+    font-size: clamp(1.8rem , 6vw ,3rem);
+    font-weight: bolder;
+}
+
+.phone:hover {
+    background-color: rgb(44, 204, 83, 1);
+}
+
+.section-1 .btn:hover {
+    background-color: rgb(22, 171, 59) !important;
+}
+
+.section-3 .btn:hover {
+    background-color: rgb(22, 171, 59) !important;
+}
+
+.section-5 .btn:hover {
+    background-color: #c1641c !important;
+}
+
+.section-6 .btn:hover {
+    background-color: rgb(22, 171, 59) !important;
+}
+
+.section-7 .btn:hover {
+    background-color: rgb(22, 171, 59) !important;
+}
+
+.section-9 .btn:hover {
+    background-color: #c1641c !important;
+}
+
+.section-10 svg {
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+    .section-1 {
+        text-align: center;
+    }
+
+    .rating {
+        justify-content: center;
+    }
+
+    .img-1 {
+        width: 75%;
+        height: 60vh;
+        margin-top: 40px;
+        margin-bottom: 30px;
+        object-fit: fill;
+    }
+
+    .section-4 .card {
+       margin-top: 15px;
+       height: 250px;
+       width: 300px;
+    }
+
+    .section-5 .text {
+        text-align: center;
+    }
+
+    .section-5 img {
+        margin-top: 50px;
+    }
+
+    .section-6 {
+        text-align: center;
+    }
+
+    .section-6 h5 {
+        margin-top: 20px;
+    }
+
+}
+
+
+
+
+@media (max-width: 992px) {
+    .section-1 {
+        text-align: center;
+    }
+
+    .rating {
+        justify-content: center;
+    }
+
+    .img-1 {
+        width: 50%;
+        height: 60vh;
+        margin-top: 40px;
+        margin-bottom: 30px;
+        object-fit: fill;
+    }
+
+    .card-1 {
+        width: 350px;
+        justify-self: center;
+    }
+
+    .section-2 p {
+        width: 85%;
+        justify-self: center;
+    }
+
+     .section-3 .text {
+        text-align: center;
+    }
+
+    .section-3 .card {
+        justify-self: center;
+        align-items: center;
+        margin-top: 30px;
+        border: none;
+    }
+
+    .section-3 .card p {
+        text-align: center;
+    }
+
+    .section-4 .img-1 {
+      width: 240px;
+      height: 300px;
+      display: flex;
+      object-fit: cover;
+      object-position: top;
+      justify-self: center;
+    }
+   
+.section-4 .text {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.section-4 .card {
+    justify-self: center;
+    margin-top: 20px;
+}
+
+.section-4 .card img {
+    align-self: center;
+}
+
+.section-7 .text {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.section-8 .card {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.section-10 h1 {
+    text-align: center;
+}
+
+.section-10 p {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.section-10 .social {
+    margin-top: 30px;
+}
+
+}
+
+
+
+
+@media (max-width: 572px) {
+    .card-1 {
+        width: 200px;
+    }
+
+    .section-7 .card {
+        margin-top: 30px;
+    }
+
+}
