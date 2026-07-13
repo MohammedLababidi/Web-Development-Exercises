@@ -1,0 +1,235 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.link-1 {
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.link-1:hover {
+    color: orangered;
+}
+
+.active-1 {
+    text-decoration: none;
+    color: orangered;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.sidebar {
+    border-right: 3px solid orangered;
+    background-color: #ffe4cc;
+    min-height: 100vh;
+}
+
+.products-text {
+    border-bottom: 3px solid orangered;
+    width: 15%;
+    color: orangered;
+}
+
+.card {
+    border: 2px solid orangered !important;
+    margin-bottom: 30px;
+    padding: 0 !important;
+    background-color: #ffe4cc !important;
+    box-shadow: 0 2px 16px  rgba(0, 0, 0, 0.6);
+    transition: all 0.3s ease;
+    will-change: transform;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+}
+
+img {
+    height: 180px;
+    object-fit: contain;
+}
+
+.img-container {
+    border-bottom: 2px solid orangered;
+    padding-bottom: 15px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.product-btn {
+    width: 120px;
+    height: 40px;
+    border: none;
+    background-color: orangered;
+    color: white;
+}
+
+.product-btn:hover {
+    background-color: rgb(228, 66, 7);
+}
+
+.details-img {
+    border: 2px solid orangered;
+    width: 250px;
+    height: auto;
+    background-color: #ffe4cc;
+
+}
+
+.price {
+    color: rgb(28, 190, 28);
+}
+
+.details-btn {
+    width: 120px;
+    height: 40px;
+    border: none;
+    background-color: orangered;
+    color: white;
+}
+
+.details-btn:hover {
+    background-color: rgb(228, 66, 7);
+}
+
+.filter-btn {
+    min-width: auto;
+    padding: 0 20px 0;
+    height: 40px;
+    border: 1px solid black;
+    background-color: white;
+    color: black;
+    font-size: 16px;
+}
+
+.active-2 {
+    background-color: orangered;
+    color: white;
+}
+
+.filter-container {
+    border-bottom: 2px solid orangered;
+    width: 50%;
+    margin: auto
+}
+
+.settings-title {
+    border-bottom: 3px solid orangered;
+    width: 130px;
+    color: orangered;
+}
+
+.input {
+    width: 300px;
+    border-color: orangered;
+}
+
+.label {
+    color: orangered;
+}
+
+.user-btn {
+    width: 120px;
+    height: 40px;
+    border: none;
+    background-color: orangered;
+    color: white;
+}
+
+.user-btn:hover {
+    background-color: rgb(228, 66, 7);
+}
+
+.profile {
+    position: absolute;
+    right: 0;
+    border-bottom: 2px solid black;
+    border-left: 2px solid black;
+    border-bottom-left-radius: 25px;
+    line-height: 1;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 18px;
+}
+
+.select {
+    width: 200px;
+    padding: 4px 4px 4px;
+    border: 1px solid orangered;
+    font-weight: bold;
+}
+
+.dark {
+    background-color: #222;
+}
+
+.dark .sidebar {
+    background-color: #333;
+}
+
+.dark .link-1 {
+    color: white;
+}
+
+
+.dark .link-1:hover {
+    color: orangered;
+}
+
+.dark .settings-text {
+    color: white;
+}
+
+.dark .select {
+    background-color: #555;
+    color: white;
+}
+
+.dark .input {
+    background-color: #333;
+}
+
+.dark .user {
+    color: white;
+}
+
+.dark .card {
+    background-color: #333 !important;
+}
+
+.dark .details-img {
+    background-color: #333;
+}
+
+.dark .product-details {
+    color: white;
+}
+
+.dark .filter-btn {
+    background-color: #555;
+    border-color: white;
+    color: white;
+}
+
+.dark .active-2 {
+    background-color: orangered;
+}
+
+.dark .product-title {
+    color: white;
+}
+
+.dark .profile {
+    border-bottom-color: white;
+    border-left-color: white;
+    background-color: #444;
+}
+
+.dark .line {
+    color: white;
+}
