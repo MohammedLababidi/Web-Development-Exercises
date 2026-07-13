@@ -11,6 +11,9 @@ function Products() {
     return category === 'all' ? products : products.filter(product => product.category === category)
   }, [products, category])
 
+
+  // ! i guess you fetched all the data once? , very wrong to fetch all the data once , we dont even have a tab called (All)
+  // ! its better to fetch only the triggered data , but its ok for now , good one to use usememo for big data like this
   useEffect(() => {
     FetchData()
       .then((response) => {

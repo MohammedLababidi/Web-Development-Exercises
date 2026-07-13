@@ -12,6 +12,10 @@ import { useContext } from "react";
 import UserProfileContext from "./context/UserProfileContext";
 import ThemeContext from "./context/ThemeContext";
 
+
+
+
+// ! add all the context providers in here 
 function App() {
   const { user } = useContext(UserProfileContext);
   const { darkTheme } = useContext(ThemeContext);
@@ -35,6 +39,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Sidebar />}>
           <Route index element={<Home />} />
+          //! fix the routes in here to be like this == /products/details/1
           <Route path="/products" element={<Products />} />
           <Route path="/details/:id" element={<ProductDetails />} />
           <Route path="/settings" element={<Settings />}>

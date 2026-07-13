@@ -7,6 +7,8 @@ import { convert } from "../utilities/CurrencyConverter";
 function Card({ products }) {
   const navigate = useNavigate();
   const { currency } = useContext(CurrencyContext)
+
+  // ! navigate is not expnsive function, but its ok for now.
   const handleNavigate = useCallback((id) => {
     navigate(`/details/${id}`)
   }, [navigate])
