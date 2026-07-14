@@ -48,7 +48,7 @@ function App() {
         <Route path="/" element={<Sidebar />}>
           <Route index element={<Home />} />
           <Route path="/products" element={<Products products={products} currency={currency} />} />
-          <Route path="/details/:id" element={<ProductDetails currency={currency} />} />
+          <Route path="/products/details/:id" element={<ProductDetails currency={currency} />} />
           <Route path="/settings" element={<Settings />}>
             <Route path="currency" element={<Currency />} />
             <Route path="theme" element={<Theme />} />
