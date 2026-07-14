@@ -8,17 +8,25 @@ import Products from "./pages/Products";
 import Settings from "./pages/Settings";
 import Theme from "./pages/Theme";
 import UserProfile from "./pages/UserProfile";
-import { useContext } from "react";
+import FetchData from "./customHooks/FetchData";
+import { useContext, useState, useEffect } from "react";
 import UserProfileContext from "./context/UserProfileContext";
 import ThemeContext from "./context/ThemeContext";
+import CurrencyContext from "./context/CurrencyContext";
 
 
-
-
-// ! add all the context providers in here 
 function App() {
+  const [products, setProducts] = useState([])
   const { user } = useContext(UserProfileContext);
   const { darkTheme } = useContext(ThemeContext);
+  const { currency } = useContext(CurrencyContext)
+
+  useEffect(() => {
+    FetchData()
+    .then((response) =>setProducts(response.data))
+    .catch((error) => console.log(error))
+  }, [])
+
   return (
     <div className={darkTheme ? "dark" : "light"}>
       <div className="profile d-flex fw-bold">
@@ -39,9 +47,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Sidebar />}>
           <Route index element={<Home />} />
-          //! fix the routes in here to be like this == /products/details/1
-          <Route path="/products" element={<Products />} />
-          <Route path="/details/:id" element={<ProductDetails />} />
+          <Route path="/products" element={<Products products={products} currency={currency} />} />
+          <Route path="/details/:id" element={<ProductDetails currency={currency} />} />
           <Route path="/settings" element={<Settings />}>
             <Route path="currency" element={<Currency />} />
             <Route path="theme" element={<Theme />} />
