@@ -1,23 +1,14 @@
 import Card from "../components/Card";
 import Button from "../components/Button";
-import { useState,useMemo, useEffect } from "react";
-import FetchData from "../customHooks/FetchData";
+import { useState, useMemo } from "react";
 
 
-function Products() {
+function Products({ products, currency }) {
   const [category, setCategory] = useState('all')
-  const [products, setProducts] = useState([]);
   const filteredProducts = useMemo(() => {
     return category === 'all' ? products : products.filter(product => product.category === category)
   }, [products, category])
 
-  useEffect(() => {
-    FetchData()
-      .then((response) => {
-        setProducts(response.data);
-      })
-      .catch((error) => console.log(error));
-  }, []);
   return (
     <>
     <div className="container">
@@ -28,7 +19,7 @@ function Products() {
       <Button className={`filter-btn rounded-5 fw-bold ${category === "women's clothing" ? 'active-2' : ''}`} onClick={() => setCategory("women's clothing")}>Women</Button>
       <Button className={`filter-btn rounded-5 fw-bold ${category === "electronics" ? 'active-2' : ''}`} onClick={() => setCategory("electronics")}>Electronics</Button>
     </div>
-    <Card products={filteredProducts} />
+    <Card products={filteredProducts} currency={currency} />
     </div>
    
     </>

@@ -1,15 +1,13 @@
 import { useParams, useNavigate } from "react-router-dom";
-import { useContext, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import Button from "../components/Button";
-import CurrencyContext from "../context/CurrencyContext";
 import { convert } from "../utilities/CurrencyConverter";
 
 
-function ProductDetails() {
+function ProductDetails({ currency }) {
   const { id } = useParams();
   const [product, setProduct] = useState([]);
   const navigate = useNavigate();
-  const { currency } = useContext(CurrencyContext)
 
   useEffect(() => {
     fetch(`https://fakestoreapi.com/products/${id}`)
