@@ -1,0 +1,11 @@
+#timezone {
+  text-align: center;
+}
+
+.container {
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+}
